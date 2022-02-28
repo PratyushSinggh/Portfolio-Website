@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+.sidebar{
+    position: absolute;
+    background-color: rgb(143, 148, 148);
+    font-family: 'Bebas Neue', cursive;
+    width: 200px;
+    height: 100vh;
+    transition: transform 0.3s ease-in;
+
+}
+
+.sidebar nav{
+    padding: 31px;
+
+}
+
+.sidebar nav li{
+    list-style: none;
+    font-size: 30px;
+    padding: 19px 0;;
+}
+
+.sidebar nav li a{
+    text-decoration: none;
+    color: black;
+}
+
+
+.main{
+    /* background-color: chocolate; */
+    /* color: cornsilk; */
+    width: 90vw;
+}
+
+.container{
+    display: flex;
+}
+
+.infoContainer{
+    /* background-color: chartreuse; */
+    height: 30vw;
+    width: 69vw;
+    margin: 79px auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+.devInfo{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-family: 'Source Code Pro', monospace;
+    font-size: 15 px;
+}
+
+.devPic img{
+    height: 30vw;
+}
+
+.hello{
+    margin-top: 5em;
+    font-size: 3 em;
+}
+
+.name{
+    font-size: 3 em;
+    font-weight: bold;
+    font-family: 'Merriweather', serif;
+}
+
+.about{
+    font-size: 2.5 em;
+}
+
+.moreAbout{
+    font-size: 12px ;
+    font-family: 'Merriweather', serif; 
+    margin-top: 10px;
+}
+
+.buttons{
+    margin-top: 20px;
+}
+.btn{
+    padding: 10px;
+    border-radius: 23px;
+    background-color: darkgray;
+    font-size: 12.5px;
+    font-weight: bold;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+.btn-sm{
+    font-size: 12.5px;
+    margin: 0;
+    padding: 10 px;
+
+}
+
+.btn:hover{
+    color: darkgray;
+    background-color: black;
+
+}
+
+.contactForm{
+    color: black;
+    font-family: 'Merriweather', serif; 
+    padding: 0 35px;
+}
+
+.contactForm h1{
+    font-family: 'Source Code Pro', monospace;
+    padding: 12px 0;
+}
+
+
+.contactForm form div{
+    padding: 10px 0;
+    display: flex;
+    flex-direction: column;
+}
+
+#emailHelp{
+    font-size: 2 px;
+    margin: 0 5px;
+    color: brown;
+    padding: 3px 0 0 0 ;
+}
+
+.contactForm div input{
+    width: 27vw;
+    border-radius: 50px;
+    padding: 3px;
+    font-size: 10px;
+}
+
+#form-check{
+    flex-direction: row;
+}
+
+
+#form-check input{
+    width: 20px;
+    margin: 3px 0 ;
+
+}
+
+.blogItem{
+    margin: 15px;
+    padding: 0px;
+    font-family: 'Merriweather', serif; 
+}
+p{
+    padding: 0px;
+    font-family: 'Source Code Pro', monospace;
+    
+}
+
+h1{
+    font-family: 'Merriweather', serif; 
+    margin: 30px;
+}
+
+.intro h2{
+    font-family: 'Merriweather', serif; 
+    margin: 30px;
+
+}
+
+.intro p{
+    font-family: 'Source Code Pro', monospace;
+    margin: 12px;
+}
+
+.skillContainer{
+    padding:20px;
+}
+
+
+.skills{   
+    width: 200px;
+    height: 6px;
+    border-radius: 25px;
+    background-color: blueviolet;
+    border: 2px solid rgb(57, 1, 110);
+    
+}
+
+.skillItem{
+    align-items: center;
+    display: flex;
+    font-family: 'Source Code Pro', monospace;
+    font-weight: 700;
+}
+
+
+.hundered {
+    width: 200px;
+    background-color: black;
+
+}
+
+.fifty{
+    width: 100px;
+    
+}
+
+.seventyFive{
+    width: 75px;
+}
+
+.sidebarGo{
+    transform: translate(-400px, 0px);
+    position: absolute;
+} 
+
+.hamburger{
+    position: absolute;
+    cursor: pointer;
+    left: 10px;
+    top: 10px;
+}
+
+.cross{
+    margin-left: 150px;
+
+}
+
+ @media (max-width: 1200px) {
+    *{ */
+        /* background-color: blue; */
+     }
+        /* .sidebar{
+            transform: translate(-400px, 0px);
+            position: absolute;
+    }  */
+    .devPic{
+        display: none;
+    }
+    .devInfo{
+        font-size: 10px;
+    }
+    .btn{
+        font-size: 8px ;
+        padding: 5px;
+        
+    }
+    .intro, .blogContainer, .contactForm, .devInfo{
+        margin: 50px 5px;
+    }
+}
